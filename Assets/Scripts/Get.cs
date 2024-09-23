@@ -17,7 +17,7 @@ public class Get : MonoBehaviour
     private static ushort _day;
     public static bool Quarantine = true, Vaccine = false;
     public static byte ChanceMask = 50;
-    public static readonly List<ushort[]> Graph = new List<ushort[]>(20); // день, здоровых, не знают, знают, мертвых
+    public static readonly List<ushort[]> Graph = new List<ushort[]>(20); // day, healthy, sick(don't know), sick(know), dead
     [SerializeField] private Transform peopleField;
 
     public static ushort Healthy
